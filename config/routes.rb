@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'analytics', to: 'analytics#index'
   get 'sales', to: 'sales#index'
   get 'admin', to: 'admin#index'
   root 'home#index'
