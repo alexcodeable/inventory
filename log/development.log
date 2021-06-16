@@ -11721,3 +11721,948 @@ Processing by AnalyticsController#index as HTML
 Completed 200 OK in 18ms (Views: 15.5ms | Allocations: 7688)
 
 
+Started GET "/admin" for ::1 at 2021-06-15 14:02:30 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 3.8ms | Allocations: 155)
+  Rendered shared/_topnav.html.erb (Duration: 17.1ms | Allocations: 679)
+  Rendered shared/_sidenav.html.erb (Duration: 8.6ms | Allocations: 430)
+  Rendered shared/_js.html.erb (Duration: 0.6ms | Allocations: 117)
+  Rendered admin/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 2669)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5426b1607899e2ff08de
+Version: webpack 4.46.0
+Time: 1779ms
+Built at: 15/06/2021 14:02:38
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8e046f8bd42597c3e641.js   60.6 KiB  application  [emitted] [immutable]  application
+js/application-8e046f8bd42597c3e641.js.map   64.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8e046f8bd42597c3e641.js js/application-8e046f8bd42597c3e641.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 527 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 7:0-54 11:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-31 9:0-5
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery.minipreview.js' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-32
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+  Rendered layout layouts/application.html.erb (Duration: 7094.3ms | Allocations: 19108)
+Completed 200 OK in 7220ms (Views: 7138.6ms | ActiveRecord: 0.0ms | Allocations: 22799)
+
+
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-15 14:02:38 +0100
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-15 14:02:38 +0100
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-15 14:02:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-15 14:02:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-15 14:02:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-15 14:02:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+Started GET "/admin" for ::1 at 2021-06-15 14:19:01 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_topnav.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 427)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5426b1607899e2ff08de
+Version: webpack 4.46.0
+Time: 1412ms
+Built at: 15/06/2021 14:19:09
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8e046f8bd42597c3e641.js   60.6 KiB  application  [emitted] [immutable]  application
+js/application-8e046f8bd42597c3e641.js.map   64.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8e046f8bd42597c3e641.js js/application-8e046f8bd42597c3e641.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 527 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 7:0-54 11:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-31 9:0-5
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery.minipreview.js' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-32
+
+  Rendered layout layouts/application.html.erb (Duration: 7602.7ms | Allocations: 6111)
+Completed 200 OK in 7604ms (Views: 7603.2ms | Allocations: 6656)
+
+
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-15 14:19:10 +0100
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-15 14:19:10 +0100
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-15 14:19:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-15 14:19:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-15 14:19:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-15 14:19:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+Started GET "/" for ::1 at 2021-06-15 14:24:19 +0100
+  [1m[35m (17.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 393)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5426b1607899e2ff08de
+Version: webpack 4.46.0
+Time: 747ms
+Built at: 15/06/2021 14:24:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8e046f8bd42597c3e641.js   60.6 KiB  application  [emitted] [immutable]  application
+js/application-8e046f8bd42597c3e641.js.map   64.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8e046f8bd42597c3e641.js js/application-8e046f8bd42597c3e641.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 527 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 7:0-54 11:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-31 9:0-5
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery.minipreview.js' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-32
+
+  Rendered layout layouts/application.html.erb (Duration: 4279.8ms | Allocations: 12901)
+Completed 200 OK in 4405ms (Views: 4323.8ms | ActiveRecord: 0.0ms | Allocations: 16598)
+
+
+Started GET "/" for ::1 at 2021-06-15 14:31:17 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5426b1607899e2ff08de
+Version: webpack 4.46.0
+Time: 613ms
+Built at: 15/06/2021 14:31:20
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8e046f8bd42597c3e641.js   60.6 KiB  application  [emitted] [immutable]  application
+js/application-8e046f8bd42597c3e641.js.map   64.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8e046f8bd42597c3e641.js js/application-8e046f8bd42597c3e641.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 527 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 1 hidden module
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/activestorage' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 7:0-54 11:0-19
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '@rails/ujs' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-31 9:0-5
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery.minipreview.js' in '/home/softalx/inventory/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-32
+
+  Rendered layout layouts/application.html.erb (Duration: 2796.1ms | Allocations: 48903)
+Completed 200 OK in 2798ms (Views: 2796.9ms | Allocations: 49451)
+
+
+Started GET "/" for ::1 at 2021-06-15 14:33:47 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 498)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 17833)
+Completed 200 OK in 94ms (Views: 69.4ms | ActiveRecord: 0.0ms | Allocations: 22547)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 14:34:05 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 70.9ms | Allocations: 131)
+  Rendered shared/_topnav.html.erb (Duration: 106.8ms | Allocations: 637)
+  Rendered shared/_sidenav.html.erb (Duration: 19.5ms | Allocations: 430)
+  Rendered shared/_js.html.erb (Duration: 27.6ms | Allocations: 117)
+  Rendered admin/index.html.erb within layouts/application (Duration: 223.2ms | Allocations: 2406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 229.8ms | Allocations: 6277)
+Completed 200 OK in 233ms (Views: 231.7ms | ActiveRecord: 0.0ms | Allocations: 7494)
+
+
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-15 14:34:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-15 14:34:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-15 14:34:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-15 14:34:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-15 14:34:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-15 14:34:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+Started GET "/analytics" for ::1 at 2021-06-15 14:34:59 +0100
+Processing by AnalyticsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering analytics/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered shared/_topnav.html.erb (Duration: 0.4ms | Allocations: 151)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered analytics/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 4800)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 6008)
+
+
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-15 14:35:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+Started GET "/admin" for ::1 at 2021-06-15 20:54:43 +0100
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 4.0ms | Allocations: 155)
+  Rendered shared/_topnav.html.erb (Duration: 7.1ms | Allocations: 679)
+  Rendered shared/_sidenav.html.erb (Duration: 7.8ms | Allocations: 430)
+  Rendered shared/_js.html.erb (Duration: 0.4ms | Allocations: 117)
+  Rendered admin/index.html.erb within layouts/application (Duration: 36.1ms | Allocations: 2669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 366.6ms | Allocations: 11215)
+Completed 200 OK in 389ms (Views: 380.0ms | ActiveRecord: 0.0ms | Allocations: 14907)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 20:54:49 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered shared/_topnav.html.erb (Duration: 1.1ms | Allocations: 137)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4217)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4771)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 20:54:58 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4068)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4517)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 20:55:01 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4066)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4510)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 20:55:14 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4066)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 4510)
+
+
+Started GET "/admin" for ::1 at 2021-06-15 20:55:16 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4067)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 4511)
+
+
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-15 20:55:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-15 20:55:30 +0100
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-15 20:55:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-15 20:55:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-15 20:55:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-15 20:55:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+Started GET "/" for ::1 at 2021-06-16 13:37:15 +0100
+  [1m[35m (82.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 393)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 720.6ms | Allocations: 9012)
+Completed 200 OK in 796ms (Views: 771.2ms | ActiveRecord: 0.0ms | Allocations: 12589)
+
+
+Started GET "/admin" for ::1 at 2021-06-16 13:37:35 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 15.5ms | Allocations: 131)
+  Rendered shared/_topnav.html.erb (Duration: 72.8ms | Allocations: 637)
+  Rendered shared/_sidenav.html.erb (Duration: 35.6ms | Allocations: 431)
+  Rendered shared/_js.html.erb (Duration: 20.4ms | Allocations: 119)
+  Rendered admin/index.html.erb within layouts/application (Duration: 156.1ms | Allocations: 2406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 162.9ms | Allocations: 6255)
+Completed 200 OK in 165ms (Views: 164.3ms | ActiveRecord: 0.0ms | Allocations: 7501)
+
+
+Started GET "/admin" for ::1 at 2021-06-16 13:37:38 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.8ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4068)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4565)
+
+
+Started GET "/analytics" for ::1 at 2021-06-16 13:37:40 +0100
+Processing by AnalyticsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering analytics/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 55)
+  Rendered shared/_topnav.html.erb (Duration: 0.3ms | Allocations: 151)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_js.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered analytics/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 972)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 4859)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 6073)
+
+
+Started GET "/admin" for ::1 at 2021-06-16 13:37:41 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4068)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 4567)
+
+
+Started GET "/analytics" for ::1 at 2021-06-16 13:37:47 +0100
+Processing by AnalyticsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering analytics/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered analytics/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4066)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4510)
+
+
+Started GET "/products" for ::1 at 2021-06-16 13:38:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+Started GET "/products/index" for ::1 at 2021-06-16 13:41:17 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210616124055_create_products.rb
+
+
+):
+  
+activerecord (6.1.3.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activesupport (6.1.3.2) lib/active_support/evented_file_update_checker.rb:65:in `execute_if_updated'
+activerecord (6.1.3.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6206110587564623505)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20210616124055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (314.7ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "SKU" character varying, "Product_name" character varying, "Price" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6206110587564623505)[0m
+Started GET "/products/index" for ::1 at 2021-06-16 13:41:48 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210616124055_create_products.rb
+
+
+):
+  
+activerecord (6.1.3.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2021-06-16 13:41:52 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6206110587564623505)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20210616124055)
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "SKU" character varying, "Product_name" character varying, "Price" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6206110587564623505)[0m
+  
+StandardError (An error has occurred, this and all later migrations canceled:
+
+PG::DuplicateTable: ERROR:  relation "products" already exists
+):
+  
+rack-mini-profiler (2.3.2) lib/patches/db/pg.rb:113:in `exec'
+rack-mini-profiler (2.3.2) lib/patches/db/pg.rb:113:in `async_exec'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:47:in `block (2 levels) in execute'
+activesupport (6.1.3.2) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.1.3.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.1.3.2) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:46:in `block in execute'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract_adapter.rb:696:in `block (2 levels) in log'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract_adapter.rb:695:in `block in log'
+activesupport (6.1.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract_adapter.rb:687:in `log'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/schema_statements.rb:322:in `create_table'
+activerecord (6.1.3.2) lib/active_record/migration.rb:929:in `block in method_missing'
+activerecord (6.1.3.2) lib/active_record/migration.rb:897:in `block in say_with_time'
+/home/softalx/.rbenv/versions/3.0.1/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+activerecord (6.1.3.2) lib/active_record/migration.rb:897:in `say_with_time'
+activerecord (6.1.3.2) lib/active_record/migration.rb:918:in `method_missing'
+db/migrate/20210616124055_create_products.rb:3:in `change'
+activerecord (6.1.3.2) lib/active_record/migration.rb:867:in `exec_migration'
+activerecord (6.1.3.2) lib/active_record/migration.rb:851:in `block (2 levels) in migrate'
+/home/softalx/.rbenv/versions/3.0.1/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+activerecord (6.1.3.2) lib/active_record/migration.rb:850:in `block in migrate'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:462:in `with_connection'
+activerecord (6.1.3.2) lib/active_record/migration.rb:849:in `migrate'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1037:in `migrate'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1329:in `block in execute_migration_in_transaction'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1380:in `block in ddl_transaction'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `block in transaction'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/transaction.rb:310:in `block in within_new_transaction'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.3.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/transaction.rb:308:in `within_new_transaction'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `transaction'
+activerecord (6.1.3.2) lib/active_record/transactions.rb:209:in `transaction'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1380:in `ddl_transaction'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1328:in `execute_migration_in_transaction'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1302:in `each'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1302:in `migrate_without_lock'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1251:in `block in migrate'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1401:in `block in with_advisory_lock'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1416:in `block in with_advisory_lock_connection'
+activerecord (6.1.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:462:in `with_connection'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1416:in `with_advisory_lock_connection'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1397:in `with_advisory_lock'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1251:in `migrate'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1086:in `up'
+activerecord (6.1.3.2) lib/active_record/migration.rb:1061:in `migrate'
+activerecord (6.1.3.2) lib/active_record/tasks/database_tasks.rb:237:in `migrate'
+activerecord (6.1.3.2) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (6.1.3.2) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:20:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6206110587564623505)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20210616124055)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "SKU" character varying, "Product_name" character varying, "Price" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6206110587564623505)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6206110587564623505)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20210616124055)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (29.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "SKU" character varying, "Product_name" character varying, "Price" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6206110587564623505)[0m
+Started GET "/analytics" for ::1 at 2021-06-16 13:43:16 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnalyticsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering analytics/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered shared/_topnav.html.erb (Duration: 1.0ms | Allocations: 622)
+  Rendered shared/_sidenav.html.erb (Duration: 0.6ms | Allocations: 428)
+  Rendered shared/_js.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered analytics/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2298)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 276.8ms | Allocations: 28505)
+Completed 200 OK in 279ms (Views: 278.1ms | ActiveRecord: 0.0ms | Allocations: 29977)
+
+
+Started GET "/admin" for ::1 at 2021-06-16 15:30:03 +0100
+  [1m[35m (43.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 18.1ms | Allocations: 155)
+  Rendered shared/_topnav.html.erb (Duration: 44.1ms | Allocations: 679)
+  Rendered shared/_sidenav.html.erb (Duration: 12.9ms | Allocations: 430)
+  Rendered shared/_js.html.erb (Duration: 5.5ms | Allocations: 117)
+  Rendered admin/index.html.erb within layouts/application (Duration: 140.8ms | Allocations: 2669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1087.6ms | Allocations: 17410)
+Completed 200 OK in 1261ms (Views: 1131.1ms | ActiveRecord: 0.0ms | Allocations: 20981)
+
+
+Started GET "/analytics" for ::1 at 2021-06-16 15:30:24 +0100
+Processing by AnalyticsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering analytics/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 1.9ms | Allocations: 55)
+  Rendered shared/_topnav.html.erb (Duration: 7.8ms | Allocations: 151)
+  Rendered shared/_sidenav.html.erb (Duration: 2.1ms | Allocations: 38)
+  Rendered shared/_js.html.erb (Duration: 1.4ms | Allocations: 38)
+  Rendered analytics/index.html.erb within layouts/application (Duration: 68.3ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 176.3ms | Allocations: 4899)
+Completed 200 OK in 228ms (Views: 209.0ms | ActiveRecord: 0.0ms | Allocations: 6145)
+
+
+Started GET "/admin" for ::1 at 2021-06-16 15:30:36 +0100
+Processing by AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/index.html.erb within layouts/application
+  Rendered shared/_css.html.erb (Duration: 1.6ms | Allocations: 38)
+  Rendered shared/_topnav.html.erb (Duration: 5.3ms | Allocations: 133)
+  Rendered shared/_sidenav.html.erb (Duration: 1.9ms | Allocations: 37)
+  Rendered shared/_js.html.erb (Duration: 1.5ms | Allocations: 37)
+  Rendered admin/index.html.erb within layouts/application (Duration: 26.3ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.3ms | Allocations: 4109)
+Completed 200 OK in 158ms (Views: 143.9ms | ActiveRecord: 0.0ms | Allocations: 4608)
+
+
+Started GET "/dashb/assets/libs/metismenu/metisMenu.min.js.map" for ::1 at 2021-06-16 15:30:55 +0100
+Started GET "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map" for ::1 at 2021-06-16 15:30:55 +0100
+Started GET "/dashb/assets/libs/node-waves/waves.min.js.map" for ::1 at 2021-06-16 15:30:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/metismenu/metisMenu.min.js.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/node-waves/waves.min.js.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/libs/bootstrap/js/bootstrap.bundle.min.js.map"):
+  
+Started GET "/dashb/assets/css/app.min.css.map" for ::1 at 2021-06-16 15:31:02 +0100
+Started GET "/dashb/assets/css/bootstrap.min.css.map" for ::1 at 2021-06-16 15:31:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/bootstrap.min.css.map"):
+  
+Started GET "/dashb/assets/css/icons.min.css.map" for ::1 at 2021-06-16 15:31:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/app.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dashb/assets/css/icons.min.css.map"):
+  
+Started GET "/" for ::1 at 2021-06-16 16:20:57 +0100
+Started GET "/" for ::1 at 2021-06-16 16:20:57 +0100
+  [1m[35m (39.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 37.2ms | Allocations: 471)
+  Rendered home/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 628.0ms | Allocations: 16948)
+  Rendered layout layouts/application.html.erb (Duration: 637.6ms | Allocations: 17922)
+Completed 500 Internal Server Error in 805ms (ActiveRecord: 0.0ms | Allocations: 20818)
+
+
+Completed 500 Internal Server Error in 915ms (ActiveRecord: 0.0ms | Allocations: 22247)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/softalx/inventory/app/assets/config
+  /home/softalx/inventory/app/assets/images
+  /home/softalx/inventory/app/assets/stylesheets
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actioncable-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/activestorage-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionview-6.1.3.2/lib/assets/compiled
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/softalx/inventory/node_modules):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+    13: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/softalx/inventory/app/assets/config
+  /home/softalx/inventory/app/assets/images
+  /home/softalx/inventory/app/assets/stylesheets
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actioncable-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/activestorage-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionview-6.1.3.2/lib/assets/compiled
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/softalx/inventory/node_modules):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+    13: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-06-16 16:23:27 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 168.2ms | Allocations: 7463)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms | Allocations: 7877)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/softalx/inventory/app/assets/config
+  /home/softalx/inventory/app/assets/images
+  /home/softalx/inventory/app/assets/stylesheets
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actioncable-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/activestorage-6.1.3.2/app/assets/javascripts
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionview-6.1.3.2/lib/assets/compiled
+  /home/softalx/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/softalx/inventory/node_modules):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+    13: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-06-16 16:33:00 +0100
+  [1m[35m (19.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 41.1ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 572.6ms | Allocations: 7449)
+Completed 500 Internal Server Error in 778ms (ActiveRecord: 0.0ms | Allocations: 10974)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/dist/css/bootstrap.
+        on line 1:1 of app/assets/stylesheets/custom.scss
+>> @import 'bootstrap/dist/css/bootstrap';
+
+   ^
+):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+    13: 
+  
+app/assets/stylesheets/custom.scss:1
+app/views/layouts/application.html.erb:10
